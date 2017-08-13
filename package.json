@@ -5,11 +5,18 @@
   "main": "index.js",
   "scripts": {
     "build": "webpack --config config/webpack.config.debug.js",
-    "build:prod": "webpack --config config/webpack.config.prod.js"
+    "build:prod": "webpack --config config/webpack.config.prod.js",
+    "test:tsc": "tsc",
+    "test:run": "ava build/**/*.test.js",
+    "test:cover": "nyc ava build/**/*.test.js",
+    "test": "run-s test:tsc test:cover"
   },
   "author": "",
   "license": "ISC",
   "devDependencies": {
+    "ava": "^0.21.0",
+    "npm-run-all": "^4.0.2",
+    "nyc": "^11.1.0",
     "ts-loader": "^2.3.2",
     "typescript": "^2.4.2",
     "webpack": "^3.5.4"
