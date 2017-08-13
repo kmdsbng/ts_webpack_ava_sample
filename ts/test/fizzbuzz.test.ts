@@ -1,4 +1,4 @@
-import {fizzbuzz} from "./fizzbuzz";
+import {fizzbuzz} from "fizzbuzz";
 import test from 'ava';
 
 test("FizzBuzz test", (t) =>{

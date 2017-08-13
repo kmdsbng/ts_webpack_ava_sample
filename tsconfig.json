@@ -4,6 +4,13 @@
     "target": "es2015",
     "noImplicitAny": true,
     "inlineSourceMap": true,
-    "outDir": "build"
+    "outDir": "build",
+    "baseUrl": ".",
+    "paths": {
+      "*": [
+        "*",
+        "ts/src/*"
+      ]
+    }
   }
 }
