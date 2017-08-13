@@ -5,12 +5,6 @@
     "noImplicitAny": true,
     "inlineSourceMap": true,
     "outDir": "build",
-    "baseUrl": ".",
-    "paths": {
-      "*": [
-        "*",
-        "ts/src/*"
-      ]
-    }
+    "baseUrl": "ts/src"
   }
 }

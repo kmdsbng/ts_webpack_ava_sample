@@ -9,7 +9,7 @@ module.exports = {
   },
   resolve: {
     extensions: ['.ts', '.js'],
-    modules: ['.', 'ts/src/', 'node_modules']
+    modules: ['.', 'node_modules']
   },
   module: {
     loaders: [
