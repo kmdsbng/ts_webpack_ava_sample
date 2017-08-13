@@ -3,7 +3,7 @@ var path = require('path');
 
 module.exports = {
   context: path.join(__dirname, '..'),
-  entry: './ts/index.ts',
+  entry: './ts/src/index.ts',
   output: {
     filename: 'bundle.js'
   },

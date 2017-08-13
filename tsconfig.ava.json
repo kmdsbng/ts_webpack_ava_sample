@@ -1,0 +1,16 @@
+{
+  "compilerOptions": {
+    "module": "commonjs",
+    "target": "es2015",
+    "noImplicitAny": true,
+    "inlineSourceMap": true,
+    "outDir": "testbuild",
+    "baseUrl": ".",
+    "paths": {
+      "*": [
+        "*",
+        "ts/src/*"
+      ]
+    }
+  }
+}
