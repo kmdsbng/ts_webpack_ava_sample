@@ -12,10 +12,12 @@ module.exports = {
     modules: ['.', 'ts/src/', 'node_modules']
   },
   module: {
-    loaders: [
+    rules: [
       {
         test: /\.ts$/,
-        loader: 'ts-loader'
+        use: [
+          'ts-loader'
+        ]
       }
     ]
   },
