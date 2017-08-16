@@ -6,7 +6,7 @@
   "scripts": {
     "build": "webpack --config config/webpack.config.debug.js",
     "build:prod": "webpack --config config/webpack.config.prod.js",
-    "ava:tsc": "tsc --project tsconfig.ava.json",
+    "ava:tsc": "tsc --project ts/tsconfig.ava.json",
     "ava:run": "cross-env NODE_PATH=testbuild/src ava testbuild/**/*.test.js",
     "ava:cover": "cross-env NODE_PATH=testbuild/src nyc ava testbuild/**/*.test.js",
     "test": "run-s ava:tsc ava:cover"
@@ -14,7 +14,7 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "ava": "^0.21.0",
+    "ava": "^0.22.0",
     "cross-env": "^5.0.5",
     "npm-run-all": "^4.0.2",
     "nyc": "^11.1.0",
